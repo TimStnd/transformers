@@ -847,6 +847,7 @@ def is_protobuf_available():
 
 
 def is_accelerate_available(min_version: str = ACCELERATE_MIN_VERSION):
+    print(_accelerate_available, _accelerate_version, min_version)
     return _accelerate_available and version.parse(_accelerate_version) >= version.parse(min_version)
 
 
